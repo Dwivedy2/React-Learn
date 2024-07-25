@@ -35,13 +35,15 @@ function MyApp() {
   work but the approach is same.
 */
 
+const anotherelement = 'check';
+
 const reactElement = {
   type: 'a',
   props: {
       href: 'https://www.google.com/',
       target: '_blank',
   },
-  value: 'Visit Google'
+  value: 'Visit Google',
 };
 
 // Correct syntax object, expected by React
@@ -51,20 +53,13 @@ const reactElement1 = React.createElement(
     href: "https://www.google.com",
     target: "_blank"
   },
-  'Visit Google'
+  'Visit Google',
+  anotherelement
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>    
-
-  // since App is nothing but a function, so both ways behaves the same
-    //  <MyApp /> 
-    // MyApp()
-    // App()
-  
-    // reactElement // will not work, syntax different
-    // reactElement1
-
-    <App />
+    // <App />
+    reactElement1
   // </React.StrictMode>,
 )
