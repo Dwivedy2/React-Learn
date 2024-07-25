@@ -17,7 +17,7 @@ function render(element, container) {
         if(key === 'children') continue;
         newElement.setAttribute(key, element.props[key]);
     }
-    newElement.innerHTML = element.value;
+    newElement.innerHTML = element.children;
     
     container.appendChild(newElement);
 }
@@ -28,7 +28,7 @@ const reactElement = {
         href: 'https://www.google.com/',
         target: '_blank',
     },
-    value: 'Visit Google'
+    children: 'Visit Google'
 };
 
 const root = document.getElementById('root');
