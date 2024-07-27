@@ -26,13 +26,11 @@ function App() {
   let [value, setValue] = useState(0);
 
   function add() {
-    value++;
-    setValue(value);
+    ((value + 1) <= 20) && setValue(value + 1);
   }
 
   function subtract() {
-    value--;
-    setValue(value);
+    ((value - 1) >= 0) && setValue(value - 1);
   }
 
   return (
