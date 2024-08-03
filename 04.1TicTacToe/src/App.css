@@ -1,0 +1,11 @@
+button {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+    font-size: 24px; /* Adjust the font size as needed */
+    line-height: 40px; /* Match the line height to the button height */
+    text-align: center; /* Center the text horizontally */
+    vertical-align: middle; /* Align the text vertically */
+    padding: 0; /* Ensure no padding affects the size */
+    margin: 0; /* Ensure no margin affects the size */
+}
